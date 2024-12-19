@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;OPSM Vision Plan Comparison Tool&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fdfdfd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff8e7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #af8700;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>select, input[type="number"] {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkbox {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.highlight {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: green;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.error {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: red;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.comparison {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.comparison .section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 48%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.extras {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff8e7;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="thumbnail_image001.png" alt="OPSM Vision Plan"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;OPSM Vision Plan Comparison Tool&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Plan Selection Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="planType"&gt;Select Plan:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="planType"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="SV Base"&gt;SV Base&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="SV Plus"&gt;SV Plus&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="SV Deluxe"&gt;SV Deluxe&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="MF Base"&gt;MF Base&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="MF Plus"&gt;MF Plus&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="MF Deluxe"&gt;MF Deluxe&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Lens Type Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="lensType"&gt;Lens Type (Automatically Adjusts Based on Plan):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="lensType" disabled&gt;&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Lens Material Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="lensMaterial"&gt;Select Lens Material:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="lensMaterial"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Plastic 1.49"&gt;Plastic 1.49&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Polycarbonate"&gt;Polycarbonate&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="1.67"&gt;1.67&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="1.74"&gt;1.74 (Additional $100)&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Lens Option Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="lensOption"&gt;Select Lens Option:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select id="lensOption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Clear"&gt;Clear&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Blue Light Filter"&gt;Blue Light Filter&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="Transitions Gen S"&gt;Transitions Gen S&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Frame Cost Input --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="frameCost"&gt;Enter Frame Cost ($):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="number" id="frameCost" placeholder="Enter frame cost"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- RAA Member Checkbox --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="checkbox"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="checkbox" id="raaMember"&gt; RAA Member (20% discount on lens costs only)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Cost Breakdown Comparison --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="comparison"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section" id="visionPlanCost"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Vision Plan Costs&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Monthly Cost: &lt;span id="monthlyPlanCost"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Total Cost Per Pair: &lt;span id="totalPlanCost"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Additional Extras: &lt;span id="planExtrasCost"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section" id="standaloneCost"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Standalone Costs&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lens Price: &lt;span id="lensPrice"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Frame Cost: &lt;span id="frameCostDisplay"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Total Standalone Cost: &lt;span id="totalStandaloneCost"&gt;$0&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Savings Display --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="result" id="savings"&gt;Savings will be displayed here...&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Extras Cost Breakdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="extras" id="extrasBreakdown"&gt;Additional extras will be displayed here if applicable...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Pricing Data</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const planDetails = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"SV Base": { lensType: "Standard Single Vision", monthlyFee: 30, totalFee: 360, allowedMaterials: ["Plastic 1.49", "Polycarbonate"], allowedOptions: ["Clear"] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"SV Plus": { lensType: "Single Vision Digital", monthlyFee: 40, totalFee: 480, allowedMaterials: ["Plastic 1.49", "Polycarbonate", "1.67", "1.74"], allowedOptions: ["Clear", "Blue Light Filter", "Transitions Gen S"] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"SV Deluxe": { lensType: "Eyezen Start", monthlyFee: 50, totalFee: 600, allowedMaterials: ["Polycarbonate", "1.67", "1.74"], includedOptions: ["Blue Light Filter", "Transitions Gen S"] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"MF Base": { lensType: "Comfort Max", monthlyFee: 55, totalFee: 660, allowedMaterials: ["Plastic 1.49", "Polycarbonate"], allowedOptions: ["Clear"] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"MF Plus": { lensType: "Physio", monthlyFee: 70, totalFee: 840, allowedMaterials: ["Plastic 1.49", "Polycarbonate", "1.67", "1.74"], allowedOptions: ["Clear", "Blue Light Filter", "Transitions Gen S"] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"MF Deluxe": { lensType: "XR Pro", monthlyFee: 90, totalFee: 1080, allowedMaterials: ["Polycarbonate", "1.67", "1.74"], includedOptions: ["Blue Light Filter", "Transitions Gen S"] }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const standalonePricing = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Standard Single Vision": { "Plastic 1.49": 230, "Polycarbonate": 310 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Single Vision Digital": { "Plastic 1.49": 250, "Polycarbonate": 330 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Eyezen Start": { "Polycarbonate": 350, "1.67": 430 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Comfort Max": { "Plastic 1.49": 480, "Polycarbonate": 560 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Physio": { "Plastic 1.49": 500, "Polycarbonate": 580 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"XR Pro": { "Polycarbonate": 600, "1.67": 680 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const extraCosts = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Blue Light Filter": 50,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Transitions Gen S": 150,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"1.74": 100</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// DOM Elements</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const planType = document.getElementById("planType");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lensType = document.getElementById("lensType");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lensMaterial = document.getElementById("lensMaterial");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lensOption = document.getElementById("lensOption");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const frameCost = document.getElementById("frameCost");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const raaMember = document.getElementById("raaMember");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const monthlyPlanCost = document.getElementById("monthlyPlanCost");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalPlanCost = document.getElementById("totalPlanCost");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const planExtrasCost = document.getElementById("planExtrasCost");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const lensPriceDisplay = document.getElementById("lensPrice");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const frameCostDisplay = document.getElementById("frameCostDisplay");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalStandaloneCost = document.getElementById("totalStandaloneCost");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const savings = document.getElementById("savings");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const extrasBreakdown = document.getElementById("extrasBreakdown");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update Plan Details</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updatePlanDetails() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedPlan = planType.value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const plan = planDetails[selectedPlan];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Lens Type</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lensType.innerHTML = `&lt;option value="${plan.lensType}"&gt;${plan.lensType}&lt;/option&gt;`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Allowed Materials</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lensMaterial.innerHTML = "";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>plan.allowedMaterials.forEach(material =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const option = document.createElement("option");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>option.value = material;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>option.textContent = material;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lensMaterial.appendChild(option);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Allowed Options</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lensOption.innerHTML = "";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (plan.allowedOptions) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>plan.allowedOptions.forEach(option =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const opt = document.createElement("option");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>opt.value = option;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>opt.textContent = option;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>lensOption.appendChild(opt);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>plan.includedOptions.forEach(option =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const opt = document.createElement("option");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>opt.value = option;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>opt.textContent = option;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>lensOption.appendChild(opt);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Plan Costs</p>
+<p class="p1"><span class="Apple-converted-space">            </span>monthlyPlanCost.textContent = `$${plan.monthlyFee}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalPlanCost.textContent = `$${plan.totalFee}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>calculateCosts();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Calculate Costs</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateCosts() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedLensType = lensType.value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedMaterial = lensMaterial.value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedOption = lensOption.value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const framePrice = parseFloat(frameCost.value) || 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const isRAA = raaMember.checked;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Base Lens Price (Standalone Pricing)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let lensBasePrice = standalonePricing[selectedLensType][selectedMaterial];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (isRAA) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>lensBasePrice *= 0.8; // Apply RAA Discount</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Add Extra Costs (if any)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let extraCost = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const plan = planDetails[planType.value];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!plan.includedOptions?.includes(selectedOption) &amp;&amp; selectedOption in extraCosts) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>extraCost = extraCosts[selectedOption];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedMaterial === "1.74") {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>extraCost += extraCosts["1.74"];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const totalStandalone = lensBasePrice + framePrice + extraCost;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Standalone Costs</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lensPriceDisplay.textContent = `$${lensBasePrice.toFixed(2)}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>frameCostDisplay.textContent = `$${framePrice.toFixed(2)}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalStandaloneCost.textContent = `$${totalStandalone.toFixed(2)}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Vision Plan Extras Cost</p>
+<p class="p1"><span class="Apple-converted-space">            </span>planExtrasCost.textContent = `$${extraCost.toFixed(2)}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate Savings</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const planCost = plan.totalFee + extraCost;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const savingsAmount = totalStandalone - planCost;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>savings.innerHTML = savingsAmount &gt; 0</p>
+<p class="p1"><span class="Apple-converted-space">                </span>? `&lt;p&gt;You save $${Math.abs(savingsAmount).toFixed(2)} with the Vision Plan.&lt;/p&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">                </span>: `&lt;p&gt;You save $${Math.abs(savingsAmount).toFixed(2)} with the Standalone Purchase.&lt;/p&gt;`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Extras Breakdown</p>
+<p class="p1"><span class="Apple-converted-space">            </span>extrasBreakdown.innerHTML = extraCost &gt; 0</p>
+<p class="p1"><span class="Apple-converted-space">                </span>? `&lt;p&gt;Added Extra: ${selectedOption} - $${extraCost.toFixed(2)}&lt;/p&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">                </span>: `&lt;p&gt;No additional extras selected.&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Event Listeners</p>
+<p class="p1"><span class="Apple-converted-space">        </span>planType.addEventListener("change", updatePlanDetails);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>lensMaterial.addEventListener("change", calculateCosts);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>lensOption.addEventListener("change", calculateCosts);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>frameCost.addEventListener("input", calculateCosts);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>raaMember.addEventListener("change", calculateCosts);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initialize Tool</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updatePlanDetails();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
